@@ -9,6 +9,8 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JEditorPane;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Inscription extends JFrame {
 	private JTextField textField;
@@ -150,6 +152,11 @@ public class Inscription extends JFrame {
 		panel.add(textField_8);
 		
 		JButton btnEnvoyer = new JButton("Envoyer");
+		btnEnvoyer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//TO DO
+			}
+		});
 		btnEnvoyer.setBounds(285, 315, 97, 25);
 		panel.add(btnEnvoyer);
 		this.setVisible(true);
